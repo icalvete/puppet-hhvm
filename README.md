@@ -15,7 +15,6 @@ See [hhvm site](http://hhvm.com/)
 
 ##Example:
 
-
 ```puppet
 
 node 'ubuntu01.smartpurposes.net' inherits test_defaults {
@@ -27,6 +26,10 @@ node 'ubuntu01.smartpurposes.net' inherits test_defaults {
 }
 	        
 ```
+
+##TODO:
+
+Integrate thisw module with an nginx server.
 
 ##Authors:
 
