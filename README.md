@@ -27,6 +27,13 @@ node 'ubuntu01.smartpurposes.net' inherits test_defaults {
 	        
 ```
 
+Now, you need add this line in each virtual host changing /var/www/html by the DocumentRoot
+
+
+```
+ProxyPassMatch ^/(.+\.(hh|php)(/.*)?)$ fcgi://127.0.0.1:9000/var/www/html/$1
+```
+
 ##TODO:
 
 Integrate thisw module with an nginx server.
