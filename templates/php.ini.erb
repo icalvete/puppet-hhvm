@@ -9,6 +9,8 @@ hhvm.log.always_log_unhandled_exceptions = true
 hhvm.log.runtime_error_reporting_level = 8191
 hhvm.mysql.typed_results = false
 
+<% if @server_error_message == true -%>
 hhvm.debug.server_error_message = true
+<% end -%>
 
 hhvm.extensions[mongodb] = mongodb.so

@@ -1,4 +1,8 @@
-class hhvm () inherits hhvm::params {
+class hhvm (
+
+  $server_error_message = $hhvm::params::server_error_message
+
+) inherits hhvm::params {
 
   anchor {'hhvm::begin':
     before => Class['hhvm::install']
