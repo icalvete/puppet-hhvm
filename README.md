@@ -6,14 +6,14 @@ Puppet manifest to install and configure hhvm
 
 See [hhvm site](http://hhvm.com/)
 
-##Requires:
+## Requires:
 
 * https://github.com/smartpurposes/puppet-modules.git
 * https://github.com/puppetlabs/puppetlabs-apt.git
 * https://github.com/icalvete/puppet-roles.git
 * https://github.com/icalvete/puppet-apache2.git
 
-##Example:
+## Example:
 
 ```puppet
 
@@ -34,10 +34,10 @@ Now, you need add this line in each virtual host changing /var/www/html by the D
 ProxyPassMatch ^/(.+\.(hh|php)(/.*)?)$ fcgi://127.0.0.1:9000/var/www/html/$1
 ```
 
-##TODO:
+##T ODO:
 
 Integrate thisw module with an nginx server.
 
-##Authors:
+## Authors:
 
 Israel Calvete Talavera <icalvete@gmail.com>
